@@ -21,6 +21,13 @@ export declare const auth: import("better-auth").Auth<{
         };
         options: import("better-auth/plugins").BearerOptions | undefined;
     }];
+    advanced: {
+        useSecureCookies: true;
+        defaultCookieAttributes: {
+            sameSite: "none";
+            secure: true;
+        };
+    } | undefined;
     emailAndPassword: {
         enabled: true;
         requireEmailVerification: false;
